@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaditya Jangid — Web Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!-- ===== NAVBAR ===== -->
+  <nav id="topNav">
+    <div class="nav-container">
+      <div class="logo"><span>Aaditya</span></div>
+      
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#services">Services</a></div>
+        <div class="link"><a href="#projects">Projects</a></div>
+        <div class="link contact-btn"><a href="#contact">Contact Us</a></div>
+      </div>
+      
+      <i class="fa-solid fa-bars hamburg" id="openMenu" onclick="hamburg()"></i>
+    </div>
+    
+    <!-- Mobile dropdown -->
+    <div class="dropdown" id="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" id="closeMenu" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- ===== HOME ===== -->
+  <section id="home" class="home-section">
+    <div class="main-container">
+      <div class="image">
+        <img src="/image/my.jpg" alt="Aditya Jangid image..." loading="lazy" decoding="async" style="aspect-ratio:1/1; object-fit:cover;" />
+      </div>
+      <div class="content">
+        <h1>Hey,&nbsp;I'm <span>Aaditya Jangid</span></h1>
+        <div class="typewriter">I'm a <span>Web Developer</span></div>
+        <p>Motivated Web Developer skilled in HTML, CSS, JavaScript, PHP, and MySQL. Passionate about creating responsive, user-friendly websites and continuously learning new technologies.</p>
+        
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/aadityajangid5490"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/aditya-jangid-135b65278/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/adityajangid_75/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <div class="btn"><button>Download CV</button></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-image">
+        <img src="/image/my.jpg" alt="Description">      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        
+        <!-- visible only on mobile -->
+        <div class="about-inner-image">
+          <img src="/image/my.jpg" alt="Aditya Jangid image..." loading="lazy" decoding="async" style="aspect-ratio:1/1; object-fit:cover;" />
+        </div>
+        
+        <p>
+          Hey I’m <strong>Aaditya Jangid</strong>, a passionate web developer with a
+          Bachelor’s degree in Computer Applications (BCA). I love building clean,
+          responsive websites and modern web applications using
+          <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.
+          My aim is to grow into a full-stack developer and work on impactful projects
+          that bring real-world solutions to people.
+        </p>
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li>
+            <span class="year">2022-2025</span>
+            <div class="details">
+              <strong>Bachelor of Computer Applications (BCA)</strong><br>
+              Compucom Institute of Information Technology & Management (CIITM), Sitapura, Jaipur
+            </div>
+          </li>
+          <li>
+            <span class="year">2021-2022</span>
+            <div class="details">
+              <strong>12th (Mathematics & Science)</strong><br>
+              Shree Ashok Sharma Sr. Sec. School, Lalsot
+            </div>
+          </li>
+          
+        </ul>
+        
+        <h3>What I Do</h3>
+        <div class="skills-chips">
+          <span>💻 Web Development</span>
+          <span>🎨 UI/UX Design (Basic)</span>
+          <span>⚡ Responsive Websites</span>
+          <span>🛠️ PHP & MySQL</span>
+          <span>🚀 Full-Stack Learning</span>
+        </div>
+        
+        <a href="Aaditya_Jangid_CV.pdf" class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2>My <span>Skills</span></h2>
+      <p class="skills-intro">Technologies and tools I work with regularly.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="icon">💻</div>
+          <h3>HTML & CSS</h3>
+          <p>Responsive, modern layouts with clean semantics.</p>
+        </div>
+        <div class="skill-card">
+          <div class="icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Interactive UI and dynamic features.</p>
+        </div>
+        <div class="skill-card">
+          <div class="icon">🛠️</div>
+          <h3>PHP & MySQL</h3>
+          <p>Back-end APIs and database design.</p>
+        </div>
+        <div class="skill-card">
+          <div class="icon">🌐</div>
+          <h3>Version Control</h3>
+          <p>Git/GitHub workflow and collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services-section">
+    <div class="section-wrap">
+      <h2>Servi<span>ces</span> </h2>
+      <div class="cards">
+        <article class="card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Custom websites & web apps tailored to your needs.</p>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first, accessible UI for all screen sizes.</p>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-gear"></i>
+          <h3>Maintenance</h3>
+          <p>Speed, security, and content updates on demand.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ✅ Projects Section (replaced Blog) -->
+  <section id="projects" class="projects-section">
+    <div class="section-wrap">
+      <h2>Proje<span>cts</span> </h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="view">View Project →</a>
+        </article>
+        <article class="card">
+          <h3>Grocery Shop Website</h3>
+          <p>An online grocery shop with admin & user login using PHP & MySQL.</p>
+          <a href="#" class="view">View Project →</a>
+        </article>
+        <article class="card">
+          <h3>CRUD System</h3>
+          <p>Advanced CRUD system with search, pagination, and image upload.</p>
+          <a href="#" class="view">View Project →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-wrap">
+      <h2>Contact <span>Me</span></h2>
+      <form class="contact-form">
+        <div class="row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  
+  <footer class="footer">© <span id="year"></span> Aaditya • All rights reserved.</footer>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
